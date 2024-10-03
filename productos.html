@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta
+			name="viewport"
+			content="width=device-width, initial-scale=1.0"
+		/>
+		<title>Productos Disponibles</title>
+		<link rel="stylesheet" href="stylesProductos.css" />
+	</head>
+	<body>
+		<header>
+			
+			<button class="back" onclick="redirectToHomePage()">Inicio</button>
+
+			<h1>Productos Walkyrie</h1>
+			<div class="container-icon">
+				<div class="container-cart-icon">
+					<svg
+						xmlns="http://www.w3.org/2000/svg"
+						fill="none"
+						viewBox="0 0 24 24"
+						stroke-width="1.5"
+						stroke="currentColor"
+						class="icon-cart"
+					>
+						<path
+							stroke-linecap="round"
+							stroke-linejoin="round"
+							d="M15.75 10.5V6a3.75 3.75 0 10-7.5 0v4.5m11.356-1.993l1.263 12c.07.665-.45 1.243-1.119 1.243H4.25a1.125 1.125 0 01-1.12-1.243l1.264-12A1.125 1.125 0 015.513 7.5h12.974c.576 0 1.059.435 1.119 1.007zM8.625 10.5a.375.375 0 11-.75 0 .375.375 0 01.75 0zm7.5 0a.375.375 0 11-.75 0 .375.375 0 01.75 0z"
+						/>
+					</svg>
+					<div class="count-products">
+						<span id="contador-productos">0</span>
+					</div>
+				</div>
+
+				<div class="container-cart-products">
+					<div class="row-product hidden">
+						<div class="cart-product">
+							<div class="info-cart-product">
+								<span class="cantidad-producto-carrito">1  </span>
+								<p class="titulo-producto-carrito">Zapatos Nike</p>
+								<span class="precio-producto-carrito">$80</span>
+							</div>
+							<svg
+								xmlns="http://www.w3.org/2000/svg"
+								fill="none"
+								viewBox="0 0 24 24"
+								stroke-width="1.5"
+								stroke="currentColor"
+								class="icon-close"
+							>
+								<path
+									stroke-linecap="round"
+									stroke-linejoin="round"
+									d="M6 18L18 6M6 6l12 12"
+								/>
+							</svg>
+						</div>
+					</div>
+
+					<div class="cart-total hidden">
+						<h3>Total:</h3>
+						<span class="total-pagar">$200.000</span>
+						<br>
+						<button class="btn-ir-pago">Ir al Pago</button>
+						<script>
+							document.querySelector('.btn-ir-pago').addEventListener('click', function() {
+							  window.location.href = 'carrito.html';
+							});
+							
+							</script>
+					<p class="cart-empty">El carrito está vacío</p>
+
+				</div>
+			</div>
+		</header>
+		<div class="container-items">
+			<div class="item" data-image="img1.jpg">
+				<figure>
+					<img
+						src="img/img1.jpg"
+						alt="producto"
+					/>
+				</figure>
+				<div class="info-product">
+					<h2>Nike Dunk Low Oil Green</h2>
+					<p class="price">$250.000</p>
+					<button class="btn-add-cart">Añadir al carrito</button>
+				</div>
+			</div>
+			<div class="item" data-image="img2.jpg">
+				<figure>
+					<img
+						src="img/img2.jpg"
+						alt="producto"
+					/>
+				</figure>
+				<div class="info-product">
+					<h2>Jordan 1 High UNC Toe</h2>
+					<p class="price">$300.000</p>
+					<button class="btn-add-cart">Añadir al carrito</button>
+				</div>
+			</div>
+			<div class="item" data-image="img3.jpg">
+				<figure>
+					<img
+						src="img/img3.jpg"
+						alt="producto"
+					/>
+				</figure>
+				<div class="info-product">
+					<h2>Nike sb Otomo</h2>
+					<p class="price">$500.000</p>
+					<button class="btn-add-cart">Añadir al carrito</button>
+				</div>
+			</div>
+			<div class="item" data-image="img4.jpg">
+				<figure>
+					<img
+						src="img/img4.jpg"
+						alt="producto"
+					/>
+				</figure>
+				<div class="info-product">
+					<h2>Nike Air Force SE</h2>
+					<p class="price">$450.000</p>
+					<button class="btn-add-cart">Añadir al carrito</button>
+				</div>
+			</div>
+			<div class="item" data-image="img5.jpg">
+				<figure>
+					<img
+						src="img/img5.jpg"
+						alt="producto"
+					/>
+				</figure>
+				<div class="info-product">
+					<h2>Jordan 3 Off Noir</h2>
+					<p class="price">$800.000</p>
+					<button class="btn-add-cart">Añadir al carrito</button>
+				</div>
+			</div>
+			<div class="item" data-image="img6.jpg">
+				<figure>
+					<img
+						src="img/img6.jpg"
+						alt="producto"
+					/>
+				</figure>
+				<div class="info-product">
+					<h2>Vans Vault Green Milieu</h2>
+					<p class="price">$500.000</p>
+					<button class="btn-add-cart">Añadir al carrito</button>
+				</div>
+			</div>
+			<div class="item" data-image="img7.jpg">
+				<figure>
+					<img
+						src="img/img7.jpg"
+						alt="producto"
+					/>
+				</figure>
+				<div class="info-product">
+					<h2>New Balance 550 Rich Paul</h2>
+					<p class="price">$450.000</p>
+					<button class="btn-add-cart">Añadir al carrito</button>
+				</div>
+			</div>
+			<div class="item" data-image="img8.jpg">
+				<figure>
+					<img
+						src="img/img8.jpg"
+						alt="producto"
+					/>
+				</figure>
+				<div class="info-product">
+					<h2>PUMA x FENTY</h2>
+					<p class="price">$430.000</p>
+					<button class="btn-add-cart">Añadir al carrito</button>
+				</div>
+			</div>
+			<div class="item" data-image="img9.jpg">
+				<figure>
+					<img
+						src="img/img9.jpg"
+						alt="producto"
+					/>
+				</figure>
+				<div class="info-product">
+					<h2>Reebok Club C Revenge Mu</h2>
+					<p class="price">$530.000</p>
+					<button class="btn-add-cart">Añadir al carrito</button>
+				</div>
+			</div>
+		</div>
+		
+		<script src="index.js"></script>
+		
+	</body>
+	<script>
+		 const productImageNames = {
+       "Nike Dunk Low Oil Green": "img1.jpg",
+    "Jordan 1 High UNC Toe": "img2.jpg",
+    "Nike sb Otomo": "img3.jpg",
+    "Nike Air Force SE": "img4.jpg",
+    "Jordan 3 Off Noir": "img5.jpg",
+    "Vans Vault Green Milieu": "img6.jpg",
+    "New Balance 550 Rich Paul": "img7.jpg",
+    "PUMA x FENTY": "img8.jpg",
+    "Reebok Club C Revenge Mu": "img9.jpg"
+	};
+		// Selecciona el botón "Añadir al carrito"
+		const addToCartButtons = document.querySelectorAll('.btn-add-cart');
+		
+		// Agrega un evento de clic a cada botón
+		addToCartButtons.forEach(button => {
+			button.addEventListener('click', () => {
+				// Obtén la información del producto
+				const productContainer = button.parentElement;
+				const productName = productContainer.querySelector('h2').innerText;
+				const productPrice = productContainer.querySelector('.price').innerText;
+				const productQuantity = 1; // Puedes cambiar esto según cómo manejes la cantidad
+
+				 // Obtener la ruta relativa de la imagen del producto
+				 const productImage = `img/${productName}.jpg`;
+		
+				// Crea un objeto con la información del producto
+				const product = {
+					name: productName,
+					price: productPrice,
+					image: productImage,
+					quantity: productQuantity
+				};
+		
+				// Almacena el producto en el sessionStorage
+				let cartItems = JSON.parse(sessionStorage.getItem('cart')) || [];
+				cartItems.push(product);
+				sessionStorage.setItem('cart', JSON.stringify(cartItems));
+		
+				// Actualiza el contador de productos en el ícono del carrito
+				updateCartCount();
+				
+			});
+		});
+		
+		// Función para actualizar el contador de productos en el ícono del carrito
+		function updateCartCount() {
+			const cartItems = JSON.parse(sessionStorage.getItem('cart')) || [];
+			const cartCount = cartItems.length;
+			document.getElementById('contador-productos').textContent = cartCount;
+		}
+		
+		// Función para manejar el evento de clic en el botón "Añadir al carrito"
+		function addToCart(event) {
+			// Obtener el elemento contenedor del producto
+			const productContainer = event.target.closest('.item');
+		
+			 // Obtener detalles del producto
+			 const productName = productContainer.querySelector('.info-product h2').textContent;
+    const productPrice = productContainer.querySelector('.info-product .price').textContent;
+
+	 // Obtener la ruta relativa de la imagen del producto		
+    const productImage = `img/${productName}.jpg`;
+
+    // Crear un objeto con la información del producto
+    const product = {
+        name: productName,
+        price: productPrice,
+        image: productImage // Agregar la URL de la imagen al objeto del producto
+        // Puedes agregar más propiedades del producto aquí según sea necesario
+    };
+		
+			// Agregar el producto al sessionStorage
+			addToSessionStorage(product);
+		}
+		
+		// Función para agregar el producto al sessionStorage
+		function addToSessionStorage(product) {
+			// Obtener el carrito actual del sessionStorage (si existe)
+			let cart = JSON.parse(sessionStorage.getItem('cart')) || [];
+		
+			// Agregar el nuevo producto al carrito
+			cart.push(product);
+		
+			// Actualizar el carrito en el sessionStorage
+			sessionStorage.setItem('cart', JSON.stringify(cart));
+		
+			// Opcional: mostrar un mensaje de éxito al usuario
+			alert('Producto agregado al carrito');
+		}
+		</script>
+</html>

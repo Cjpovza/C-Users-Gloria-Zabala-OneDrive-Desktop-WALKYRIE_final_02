@@ -1,0 +1,153 @@
+html {
+    font-family: var(--ff-urbanist);
+    font-size: 22px;
+    scroll-behavior: smooth;
+  }
+        body {
+            font-family: Arial, sans-serif;
+            color: #523535;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: #ffffff;
+            color: #ffffff;
+            padding: 10px 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .header-left, .header-right {
+            flex: 1;
+            display: flex;
+            justify-content: flex-end;
+        }
+
+        .header-right a{
+            margin-left: 15px;
+            margin-right: 15px;
+            justify-content: flex-end;
+        }
+
+        .icono {
+            width: 30px;
+            height: auto;
+        }
+
+        nav {
+            background-color: #ffffff;
+            color: rgb(0, 0, 0);
+            padding: 20px 20px;
+            text-align: center;   
+        }
+        
+        nav a {
+            margin: 0 10px;
+            /*Mantiene el color base!!*/
+            color: inherit;
+            /*Quita el subrayado debajo de los enlaces*/
+            text-decoration: none;
+            cursor: pointer;
+        }
+
+        .logo {
+            max-width: 120px;
+            cursor: pointer;
+        }
+
+        .inicio{
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            background-color: #ffffff;
+
+        }
+        .inicioImagen{
+                width: auto; 
+                height: auto;
+        }
+        img {
+            max-width: 100%;
+            height: auto;
+        }
+        .elSlider{
+            justify-content: center;
+            text-align: center;
+            font-size: 30px;
+        }
+        .elSlider img{
+            width: 200px;
+            height: auto;
+
+        }
+        .elSlider .sliderWrapper {
+            position: relative;
+            width: 100%; 
+            height: 200px; 
+            overflow: hidden;
+        }
+        
+        .itemSlider {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            /*Oculta todas las fotos*/
+            opacity: 0; 
+            /* Transición de opacidad */
+            transition: opacity 2s ease-in-out; 
+        }
+         /* el first child hace referencia al primer hijo de un elemento padre en este caso de item slider toma el primero */
+        .itemSlider:first-child {
+            opacity: 1;
+        }
+        footer {
+            background-color: #222;
+            color: white;
+            display: flex;
+            justify-content: space-around;
+            padding: 20px;
+            text-align: center;
+        }
+        
+        .footer-section {
+            flex: 1;
+        }
+        
+        .footer-section h4 {
+            margin-top: 20px;
+            color: #f4f4f4;
+        }
+        
+        .footer-section p, .footer-section a {
+            color: #ccc;
+            text-decoration: none;
+        }
+        
+        .footer-section ul {
+            list-style: none;
+            padding: 0;
+        }
+        
+        .footer-section li a:hover {
+            text-decoration: underline;
+        }
+        .footer-section a {
+            display: inline-flex; 
+            align-items: center; 
+            color: #ccc;
+            text-decoration: none;
+            margin: 5px 0;
+        }
+        
+        .footer-section a img {
+            margin-right: 10px; 
+            width: 30px;
+            height: auto;
+        }
+        
+        .footer-section a span {
+            vertical-align: middle;
+        }

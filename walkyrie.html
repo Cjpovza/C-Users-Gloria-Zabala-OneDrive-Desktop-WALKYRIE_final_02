@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilos.css">
+    <title>WALKYRIE</title>
+    
+    <script>
+    
+        window.onload = function() {
+            const slides = document.querySelectorAll('.itemSlider');
+            let currentSlide = 0;
+    
+            function nextSlide() {
+                slides[currentSlide].style.opacity = 0; // Oculta la imagen actual
+                currentSlide = (currentSlide + 1) % slides.length; // Calcula el índice de la próxima imagen
+                slides[currentSlide].style.opacity = 1; // Muestra la próxima imagen
+            }
+    
+            setInterval(nextSlide, 4000); // Cambia la imagen cada 1.5 segundos
+        }
+    </script>
+</head>
+
+<body>
+    <header>
+        <div class="header-left"></div>
+        <img src="img/logo-black-removebg-preview.png" alt="WALKYRIE" class="logo">
+        <div class="header-right">
+            <a href="#me-gustas"><img src="img/heart.png" alt="Me gustas" class="icono"></a>
+            <a href="#carrito"><img src="img/shopping-cart.png" alt="Carrito" class="icono"></a>
+            <a href="#usuario"><img src="img/user.png" alt="Usuario" class="icono"></a>
+        </div>
+    </header>
+    <nav>
+        <a href="#inicio">Inicio</a>
+        <a href="productos.html">Productos</a>
+        <a href="#contacto">Contacto</a>
+
+    </nav>
+    <div class="inicio" id="inicio">
+        <img class="inicioImagen" src="img/Purple and Green Colorful Modern Technology YouTube Thumbnail.png" alt="Walkyrie página inicio">   
+    </div>
+    <div class="elSlider" id="marcas">
+        <h2>NUESTRAS MARCAS</h2>
+        <div class="sliderWrapper">
+            <div class="itemSlider">
+                <img src="./img/Adidas.png" alt="" class="sliderImg">
+                <div class="sliderBg"></div>
+            </div>
+            <div class="itemSlider">
+                <img src="./img/Nike.png" alt="" class="sliderImg">
+                <div class="sliderBg"></div>
+            </div>
+            <div class="itemSlider">
+                <img src="./img/Puma.png" alt="" class="sliderImg">
+                <div class="sliderBg"></div>
+            </div>
+        </div>
+    </div>
+    <br><br><br><br>
+    <footer id="contacto">
+        <div class="footer-section">
+            <h4>Contacto</h4>
+            <p>Teléfono: 456 7890</p>
+            <p>Celular: +57 310 000 0000</p>
+            <p>Email: contacto@walkyrie.com</p>
+        </div>
+        <div class="footer-section">
+            <h4>Información Adicional</h4>
+            <ul>
+                <li><a href="#politicas">Políticas de privacidad</a></li>
+                <li><a href="#terminos">Términos y condiciones</a></li>
+            </ul>
+        </div>
+        <div class="footer-section">
+            <h4>Redes Sociales</h4>
+            <!--Etiqueta span es similar a el div pero en vez de ser de bloque es en linea-->
+                <a href="https://facebook.com"><img src="img/facebook.png" alt="Facebook"> <span>Facebook</span></a><br>
+                <a href="https://twitter.com"><img src="img/twitter.png" alt="Twitter"> <span>Twitter</span></a><br>
+                <a href="https://instagram.com"><img src="img/instagram.png" alt="Instagram"> <span>Instagram</span></a>
+
+        </div>
+    </footer>
+</body>
+
+</html>
