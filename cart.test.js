@@ -3,7 +3,8 @@ const { addToSessionStorage, updateCartCount } = require('./cart');
 describe('Funciones del carrito', () => {
     beforeEach(() => {
         sessionStorage.clear();
-        document.body.innerHTML = `<div id="contador-productos">0</div>`;
+        document.body.innerHTML = <div id="contador-productos">0</div>;
+        window.alert = jest.fn();
     });
 
     test('debe agregar un producto al sessionStorage', () => {
@@ -21,5 +22,5 @@ describe('Funciones del carrito', () => {
         updateCartCount();
 
         expect(document.getElementById('contador-productos').textContent).toBe('1');
-    });
+    });
 });
